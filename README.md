@@ -31,9 +31,9 @@ docker build -t proddy-bot .
 # Запусти контейнер
 docker run -d -p 8080:8080 --name proddy-bot \
   -e BOT_TOKEN=your_bot_token_here \
-
+```
 ### Способ 2: Локальный запуск
-bash
+```bash
 # Клонируй репозиторий
 git clone https://github.com/your-username/proddy-bot.git
 cd proddy-bot
@@ -47,7 +47,7 @@ cp .env.example .env
 
 # Запусти приложение
 go run ./cmd/bot
-
+```
 ### ⚙️ Конфигурация
 Создай файл .env в корне проекта:
 
